@@ -11,12 +11,9 @@ while True:
     elapsed_time += 1
     min += 1
 
-    if a == 11 and b < 11 and c >= 11:
+    if a == 11 and b < 11:
         print(-1)
         break
-    elif a == 11 and b < 11 and c <= 11:
-        print(-1)
-        break 
     elif a == 11 and b == 11 and c < 11:
         print(-1)
         break 
