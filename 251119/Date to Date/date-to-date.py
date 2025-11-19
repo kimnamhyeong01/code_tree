@@ -11,7 +11,10 @@ while True:
     elapsed_day += 1
     days += 1
 
-    if days > num_of_months[month]:
+    if month != 12 and days > num_of_months[month]:
         month += 1
         days = 0     
+    else:
+        month = 1
+        days = 0
 print(elapsed_day)
