@@ -8,12 +8,21 @@ for i in range(n):
     cnt = 0
     temp = ''
     temp = str[i]
-    for j in range(len(T)):
-        if temp[j] == T[j]:
-            cnt += 1
-        else: 
-            continue 
-    if cnt == len(T):
-        arr.append(temp) 
+    if len(T) <= len(temp):
+        for j in range(len(T)):
+            if temp[j] == T[j]:
+                cnt += 1
+            else: 
+                continue 
+        if cnt == len(T):
+            arr.append(temp) 
+    else:
+        for j in range(len(temp)):
+            if temp[j] == T[j]:
+                cnt += 1
+            else:
+                continue
+        if cnt == len(T):
+            arr.append(temp)
 arr.sort()
 print(arr[k - 1])        
