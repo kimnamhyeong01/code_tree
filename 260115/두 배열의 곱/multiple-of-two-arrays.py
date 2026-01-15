@@ -11,5 +11,5 @@ for _ in range(3):
 
 for i in range(3):
     for j in range(3):
-        print(rows_1[i][j] * rows_2[i][j], end=' ')
+        print(array1[i][j] * array2[i][j], end=' ')
     print()
