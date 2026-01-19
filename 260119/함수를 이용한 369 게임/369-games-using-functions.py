@@ -9,6 +9,7 @@ def game(b):
         for i in b:
             if i == '3' or i == '6' or i == '9':
                 cnt += 1
+                break
     return cnt 
 
 for i in range(a, b + 1):
